@@ -84,8 +84,32 @@
             background-color: #555;
         }
 
-        .nav-container > ul > li:hover .dropdown {
-            display: block;
+        .dropdown-toggle {
+            cursor: pointer;
+        }
+
+        /* Show dropdown on hover for desktop */
+        @media (min-width: 769px) {
+            .nav-container > ul > li:hover .dropdown {
+                display: block;
+            }
+
+            .dropdown:target {
+                display: none; /* Disable :target behavior on desktop */
+            }
+        }
+
+        /* Dropdown toggle with :target for mobile */
+        @media (max-width: 768px) {
+            .dropdown:target {
+                display: block;
+            }
+        }
+
+        .dropdown-arrow {
+            margin-left: 5px;
+            font-size: 0.8rem;
+            color: white;
         }
 
         .hamburger {
@@ -110,12 +134,6 @@
 
         .mobile-menu.active {
             display: flex;
-        }
-
-        .dropdown-arrow {
-            margin-left: 5px;
-            font-size: 0.8rem;
-            color: white;
         }
 
         /* Mobile styles */
@@ -172,8 +190,9 @@
         <ul>
             <li><a href="#">Tab 1</a></li>
             <li>
-                <a href="#">Tab 2<span class="dropdown-arrow">&#x25BC;</span></a>
-                <ul class="dropdown">
+                <a href="page2.html">Tab 2</a>
+                <a href="#dropdown2" class="dropdown-toggle"><span class="dropdown-arrow">&#x25BC;</span></a>
+                <ul id="dropdown2" class="dropdown">
                     <li><a href="#">Submenu 1</a></li>
                     <li><a href="#">Submenu 2</a></li>
                     <li><a href="#">Submenu 3</a></li>
@@ -182,8 +201,9 @@
             </li>
             <li><a href="#">Tab 3</a></li>
             <li>
-                <a href="#">Tab 4<span class="dropdown-arrow">&#x25BC;</span></a>
-                <ul class="dropdown">
+                <a href="page4.html">Tab 4</a>
+                <a href="#dropdown4" class="dropdown-toggle"><span class="dropdown-arrow">&#x25BC;</span></a>
+                <ul id="dropdown4" class="dropdown">
                     <li><a href="#">Submenu 1</a></li>
                     <li><a href="#">Submenu 2</a></li>
                     <li><a href="#">Submenu 3</a></li>
