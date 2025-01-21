@@ -3,168 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navigation</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        nav {
-            background-color: #333;
-        }
-
-        .nav-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-        }
-
-        .logo {
-            color: white;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-
-        .nav-container a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-        }
-
-        .nav-container > ul {
-            display: flex;
-            list-style: none;
-        }
-
-        .nav-container > ul > li {
-            position: relative;
-            display: flex;
-            align-items: center;
-        }
-
-        .nav-container > ul > li:hover > a {
-            background-color: #444;
-        }
-
-        .dropdown {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #444;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            min-width: 150px;
-        }
-
-        .dropdown li {
-            border-bottom: 1px solid #555;
-        }
-
-        .dropdown li:last-child {
-            border-bottom: none;
-        }
-
-        .dropdown a {
-            display: block;
-            padding: 10px;
-        }
-
-        .dropdown a:hover {
-            background-color: #555;
-        }
-
-        .nav-container > ul > li:hover .dropdown {
-            display: block;
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .hamburger span {
-            background-color: white;
-            height: 3px;
-            width: 25px;
-            margin: 4px 0;
-        }
-
-        .mobile-menu {
-            display: none;
-            flex-direction: column;
-            width: 100%;
-            background-color: #333;
-        }
-
-        .mobile-menu.active {
-            display: flex;
-        }
-
-        .dropdown-arrow {
-            margin-left: 5px;
-            font-size: 0.8rem;
-            color: white;
-        }
-
-        /* Mobile styles */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: row;
-                align-items: center;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            .nav-container > ul {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                margin-top: 10px;
-            }
-
-            .nav-container > ul.active {
-                display: flex;
-            }
-
-            .nav-container > ul > li {
-                width: 100%;
-            }
-
-            .nav-container > ul > li a {
-                display: block;
-                width: 100%;
-            }
-
-            .dropdown {
-                position: static;
-                width: 100%;
-            }
-
-            .dropdown a {
-                padding-left: 30px;
-            }
-        }
-    </style>
+    <title>Total Energy</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
 <nav>
     <div class="nav-container">
         <a href="#" class="logo">Logo</a>
-        <div class="hamburger" onclick="document.querySelector('.nav-container > ul').classList.toggle('active')">
+        <div class="hamburger" onclick="toggleMobileMenu()">
             <span></span>
             <span></span>
             <span></span>
@@ -172,8 +18,9 @@
         <ul>
             <li><a href="#">Tab 1</a></li>
             <li>
-                <a href="#">Tab 2<span class="dropdown-arrow">&#x25BC;</span></a>
-                <ul class="dropdown">
+                <a href="page2.html">Tab 2</a>
+                <span class="dropdown-arrow" onclick="toggleDropdown(event, 'dropdown2')">&#x25BC;</span>
+                <ul id="dropdown2" class="dropdown">
                     <li><a href="#">Submenu 1</a></li>
                     <li><a href="#">Submenu 2</a></li>
                     <li><a href="#">Submenu 3</a></li>
@@ -182,8 +29,9 @@
             </li>
             <li><a href="#">Tab 3</a></li>
             <li>
-                <a href="#">Tab 4<span class="dropdown-arrow">&#x25BC;</span></a>
-                <ul class="dropdown">
+                <a href="page4.html">Tab 4</a>
+                <span class="dropdown-arrow" onclick="toggleDropdown(event, 'dropdown4')">&#x25BC;</span>
+                <ul id="dropdown4" class="dropdown">
                     <li><a href="#">Submenu 1</a></li>
                     <li><a href="#">Submenu 2</a></li>
                     <li><a href="#">Submenu 3</a></li>
@@ -194,5 +42,6 @@
         </ul>
     </div>
 </nav>
+<script src="scripts/main.js" defer></script>
 </body>
 </html>
