@@ -5309,3 +5309,49 @@ nav {
 .show {
     display: block !important;
 }
+
+.hero {
+    background-color: #60a93c;
+}
+.widget-title span {
+    background: #287db3 none repeat scroll 0 0;
+    display: block;
+    height: 3px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    width: 50px;
+}
+
+@media screen and (max-width: 500px) {
+
+    .pocetna-slika {
+        display: block !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        object-fit: cover !important;
+    }
+
+}
+
+.btn-urban {
+    font-size: 16px;
+    color: white;
+    background-color: #287db3;
+    /*border: 1px solid #287db3;*/
+    padding: 4px 20px;
+    /*border-radius: 5px;*/
+    /*box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50);*/
+    text-decoration: none;
+}
+
+.btn-urban:hover {
+    color: white;
+    /*border: 1px solid #287db3;*/
+    background-color: #1c587d;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
