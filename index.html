@@ -9,36 +9,45 @@
 <body>
 <nav>
     <div class="nav-container">
-        <a href="#" class="logo">Logo</a>
+        <a href="index.html" class="logo">
+            <picture>
+                <source media="(min-width: 577px)" srcset="images/logo/logo-text-trim-70.png"
+                        type="image/webp">
+                <source media="(min-width: 577px)" srcset="images/logo/logo-text-trim-70.png"
+                        type="image/jpg">
+
+                <source media="(max-width: 576px)" srcset="images/logo/logo-text-trim-70.png"
+                        type="image/webp">
+                <source media="(max-width: 576px)" srcset="images/logo/logo-text-trim-70.png"
+                        type="image/jpg">
+
+                <img class="img-fluid p-1" src="images/logo/logo-text-trim-70.png" width="104"
+                     height="70"
+                     alt="total energy logo">
+            </picture>
+        </a>
         <div class="hamburger" onclick="toggleMobileMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <ul>
-            <li><a href="#">Tab 1</a></li>
+            <li><a href="#">POČETNA</a></li>
             <li>
-                <a href="page2.html">Tab 2</a>
+                <a href="#">USLUGE</a>
                 <span class="dropdown-arrow" onclick="toggleDropdown(event, 'dropdown2')">&#x25BC;</span>
                 <ul id="dropdown2" class="dropdown">
-                    <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submenu 2</a></li>
-                    <li><a href="#">Submenu 3</a></li>
-                    <li><a href="#">Submenu 4</a></li>
+                    <li><a href="#">Servis klima</a></li>
+                    <li><a href="#">Ugradnja klima</a></li>
+                    <li><a href="#">Montaža klima</a></li>
+                    <li><a href="#">Popravka klima</a></li>
+                    <li><a href="#">Demontaža klime</a></li>
+                    <li><a href="#">Punjenje freona</a></li>
                 </ul>
             </li>
-            <li><a href="#">Tab 3</a></li>
-            <li>
-                <a href="page4.html">Tab 4</a>
-                <span class="dropdown-arrow" onclick="toggleDropdown(event, 'dropdown4')">&#x25BC;</span>
-                <ul id="dropdown4" class="dropdown">
-                    <li><a href="#">Submenu 1</a></li>
-                    <li><a href="#">Submenu 2</a></li>
-                    <li><a href="#">Submenu 3</a></li>
-                    <li><a href="#">Submenu 4</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Tab 5</a></li>
+            <li><a href="#">CENOVNIK</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">KONTAKT</a></li>
         </ul>
     </div>
 </nav>
