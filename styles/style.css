@@ -5334,21 +5334,37 @@ nav {
 
 }
 
-.btn-urban {
-    font-size: 16px;
-    color: white;
-    background-color: #287db3;
-    /*border: 1px solid #287db3;*/
-    padding: 4px 20px;
-    /*border-radius: 5px;*/
-    /*box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50);*/
+.btn-hero {
+    display: inline-block;
+    padding: 12px 15px;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 1em;
+    text-align: center;
     text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
 }
 
-.btn-urban:hover {
+.btn-secondary {
     color: white;
-    /*border: 1px solid #287db3;*/
-    background-color: #1c587d;
+    border-color: white;
+    background-color: transparent;
+    background-size: 0 100%;
+    background-image: linear-gradient(to left, #287db3, #287db3);
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+}
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
+    color: #ffffff;
+    background-image: linear-gradient(to right, #287db3, #287db3);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: all 0.5s;
 }
 
 .img-fluid {
