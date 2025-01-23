@@ -5126,13 +5126,20 @@
 
 }
 @media (max-width: 768px) {
-
-
+    .hero-1-section {
+        height: 700px;
+    }
 }
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
+}
+
+@media (max-width: 992px) {
+    .hero-1-section {
+        height: 700px;
+    }
 }
 
 /*// X-Large devices (large desktops, 1200px and up)*/
@@ -5313,6 +5320,11 @@ nav {
 .hero {
     background-color: #60a93c;
 }
+
+.hero-1-section {
+
+}
+
 .widget-title span {
     background: #287db3 none repeat scroll 0 0;
     display: block;
