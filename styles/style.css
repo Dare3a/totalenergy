@@ -5136,7 +5136,7 @@
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .hero-1-section {
         height: 700px;
     }
@@ -5473,4 +5473,18 @@ nav {
     background-image: url(../images/total-energy-logo-300.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.image-clip-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+@media (max-width: 991px) {
+
+    .image-clip-1 {
+        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    }
+}
+.pozadina-green {
+    background-color: #60a93c;
 }
