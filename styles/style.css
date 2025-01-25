@@ -5511,12 +5511,16 @@ nav {
 .oblak:hover {
     color: white;
     padding: 2px 8px;
-    background-color: #216691;
+    background-color: #287db3;
     border-radius: 50px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50);
     text-decoration: none;
 }
 
 .pozadina-blue {
-    background-color: #216691;
+    background-color: #287db3;
+}
+
+.color-blue {
+    color: #287db3;
 }
