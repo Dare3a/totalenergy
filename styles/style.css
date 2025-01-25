@@ -5479,6 +5479,17 @@ nav {
         clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
     }
 }
+
+.image-clip-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
+}
+@media (max-width: 991px) {
+
+    .image-clip-2 {
+        clip-path: polygon(0% 0%, 100% 0, 100% 70%, 50% 100%, 0 70%);
+    }
+}
 .pozadina-green {
     background-color: #60a93c;
 }
@@ -5504,4 +5515,8 @@ nav {
     border-radius: 50px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50);
     text-decoration: none;
+}
+
+.pozadina-blue {
+    background-color: #216691;
 }
