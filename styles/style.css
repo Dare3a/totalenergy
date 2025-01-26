@@ -5533,44 +5533,22 @@ nav {
     background-color: #ff914b;
 }
 
-.usluge .card-usluge {
+.about .card {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     border-radius: 0;
     background-color: #bfbfbf;
-    height: 350px;
+    height: 450px;
+    border: none;
     /*border: 2px solid #e4d481;*/
     /*box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;*/
 }
 
+.about .card-title {
+    margin-bottom: -30px;
+}
+
 .card-usluge:hover {
     background-color: #a6a6a6;
-}
-
-.usluge .card-title a {
-    color: #6196A6;
-    text-decoration: none !important;
-    font-weight: bold;
-}
-
-.usluge .card-title a:hover {
-    color: #5F5D9C;
-}
-
-.card-usluge {
-    border-radius: 15px;
-}
-
-.card-align {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.card-align > * {
-    /*flex: 1;*/
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0;
 }
 
 .rounded-img {
