@@ -5547,7 +5547,7 @@ nav {
     margin-bottom: -30px;
 }
 
-.card-usluge:hover {
+.about .card:hover {
     background-color: #a6a6a6;
 }
 
