@@ -5568,3 +5568,50 @@ nav {
 .filter-blue {
     filter: brightness(0) saturate(100%) invert(37%) sepia(71%) saturate(577%) hue-rotate(159deg) brightness(100%) contrast(82%);
 }
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    animation: slide 20s linear infinite;
+    width: calc(10 * 33.33%); /* Ukupna širina za 10 slajdova */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.slider-item {
+    flex: 0 0 33.33%; /* Show 3 items on desktop */
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: #fff;
+}
+
+.slider-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .slider-item {
+        flex: 0 0 100%; /* Show 1 item on mobile */
+    }
+}
