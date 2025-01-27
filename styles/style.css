@@ -5549,17 +5549,22 @@ nav {
     /*box-shadow: rgba(0, 0, 0, 0.25) 0 4px 4px, rgba(0, 0, 0, 0.22) 0 4px 4px;*/
 }
 
-.about .card-title {
-    margin-bottom: -30px;
-}
+/*.about .card-title {*/
+/*    margin-bottom: -30px;*/
+/*}*/
 
 .about .card:hover {
     background-color: #a6a6a6;
 }
 
+.about .card-text {
+    margin-bottom: 40px;
+}
+
 .rounded-img {
     border-radius: 50px;
 }
+
 
 .text-center {
     text-align: center !important;
@@ -5676,4 +5681,8 @@ nav {
 
 .faq-toggle:checked + .faq-question + .faq-answer {
     display: block;
+}
+
+.gold {
+    color: gold;
 }
