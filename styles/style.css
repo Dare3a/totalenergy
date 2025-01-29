@@ -5,9 +5,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 * {
-    font-family: 'EB Garamond', Georgia, serif;
+    font-family: 'Poppins', Georgia, serif;
+    font-weight: 400;
+    font-style: normal;
     font-synthesis: weight style;
 }
+
 
 :root {
     --bs-blue: #0d6efd;
@@ -5538,6 +5541,7 @@ nav {
 .color-green {
     color: #60a93c;
 }
+
 .pozadina-orange {
     background-color: #ff914b;
 }
@@ -5693,21 +5697,27 @@ nav {
 footer {
     background-color: #287db3;
 }
+
 .social-network {
     background-color: #59a8d9;
 }
+
 .social-network a {
     text-decoration: none;
 }
+
 .footer-link {
     color: white;
 }
+
 .footer-copyright {
     background-color: #1c587d;
 }
+
 .text-light {
     color: white;
 }
+
 .footer-lista li {
     list-style: none;
 }
@@ -5748,6 +5758,7 @@ footer {
     }
 
 }
+
 .cursor-pinter {
     cursor: pointer;
 }
