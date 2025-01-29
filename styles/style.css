@@ -5711,3 +5711,40 @@ footer {
 .footer-lista li {
     list-style: none;
 }
+
+@media (max-width: 1023px) {
+
+    .bottom-menu {
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100% !important;
+    }
+
+    .bottom-menu-card {
+        background-color: #287db3;
+        border: 1px solid white;
+        padding: 5px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bottom-menu {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 7%;
+        /*opacity: 0.9;*/
+    }
+
+    .bottom-menu-card {
+        background-color: #287db3;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    .bottom-menu-card:hover {
+        background-color: #1c587d;
+    }
+
+}
