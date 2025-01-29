@@ -5748,3 +5748,6 @@ footer {
     }
 
 }
+.cursor-pinter {
+    cursor: pointer;
+}
