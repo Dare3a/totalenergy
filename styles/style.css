@@ -5535,6 +5535,9 @@ nav {
     color: #287db3;
 }
 
+.color-green {
+    color: #60a93c;
+}
 .pozadina-orange {
     background-color: #ff914b;
 }
@@ -5685,4 +5688,26 @@ nav {
 
 .gold {
     color: gold;
+}
+
+footer {
+    background-color: #287db3;
+}
+.social-network {
+    background-color: #59a8d9;
+}
+.social-network a {
+    text-decoration: none;
+}
+.footer-link {
+    color: white;
+}
+.footer-copyright {
+    background-color: #1c587d;
+}
+.text-light {
+    color: white;
+}
+.footer-lista li {
+    list-style: none;
 }
