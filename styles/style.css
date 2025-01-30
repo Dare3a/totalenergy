@@ -5546,6 +5546,10 @@ nav {
     background-color: #ff914b;
 }
 
+.color-white {
+    color: white;
+}
+
 .about .card {
     clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
     border-radius: 0;
@@ -5761,4 +5765,123 @@ footer {
 
 .cursor-pinter {
     cursor: pointer;
+}
+
+.pozadina {
+    background-image: url(../images/servis-klima-total-energy-colors.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.transbox {
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(56, 62, 66, 0.7); /* Green background with 0.5 opacity */
+    /*opacity: 0.8;*/
+}
+.kontakt-podatci {
+    color: white;
+    /*background-color: rgba(55, 100, 109, 0.7);*/
+    border-radius: 10px;
+}
+.list-unstyled {
+    /*padding-left: 0;*/
+    list-style: none;
+}
+.kontakt-podatci a, .kontakt-podatci .text-link a {
+    color: #ff711a;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.kontakt-podatci a:hover, .kontakt-podatci .text-link a:hover {
+    color: #ff711a;
+    text-decoration: underline;
+}
+.pod-nav {
+    /*background-image: linear-gradient(to right, #ff8095, #dc89d0, #909eee, #27ace2, #00afb9);*/
+    /*color: white;*/
+    /*background-color: #a8dadc;*/
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: white;
+    font-size: 24px;
+}
+.form-control {
+    display: block;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c8ccd0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.kontakt input, .kontakt textarea {
+    background-color: white !important;
+    /*border-radius: 0 !important;*/
+    /*box-shadow: 8px 8px 6px 0 rgb(0 0 0 0.50);*/
+}
+
+.kontakt .form-control:focus {
+    border-color: white !important;
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.kontakt .form-control:focus-visible {
+    outline: none;
+}
+
+.send-button .send-dugme {
+    border-radius: 15px;
+    color: white;
+    background-color: #ff711a;
+    cursor: pointer;
+    /*border: #fed9b7 1px solid !important;*/
+}
+
+.send-button .send-dugme:hover {
+    background-color: #e65800;
+}
+
+.send-button .form-control:focus {
+    /*border-color: #009199 !important;*/
+    -webkit-box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 6px 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: inline-block;
+}
+
+.toast {
+    width: 350px;
+    max-width: 100%;
+    font-size: .875rem;
+    pointer-events: auto;
+    background-color: rgba(255, 255, 255, .85);
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1rem rgba(0 0 0 0.15);
+    border-radius: 0.25rem;
+}
+
+.toast:not(.show) {
+    display: none;
+}
+
+.fade:not(.show) {
+    opacity: 0;
+}
+
+.fade {
+    transition: opacity .15s linear;
 }
