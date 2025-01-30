@@ -1,7 +1,6 @@
 <?php
 if (isset($_POST["submit"])) {
     $name = $_POST['name'];
-    $company = $_POST['company'];
     $email = $_POST['email'];
     $telefon = $_POST['telefon'];
     $message = $_POST['message'];
