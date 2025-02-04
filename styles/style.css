@@ -5160,6 +5160,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.font-20 {
+    font-size: 20px;
+}
+
+.font-22 {
+    font-size: 22px;
+}
+
 .font-24 {
     font-size: 24px;
 }
@@ -5884,4 +5892,8 @@ label {
 
 .fade {
     transition: opacity .15s linear;
+}
+
+.lista-brendova {
+    list-style: none;
 }
