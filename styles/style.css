@@ -5635,9 +5635,12 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .slider-item {
-        flex: 0 0 100%; /* Show 1 item on mobile */
+    .slider {
+        width: calc(10 * 100%); /* Podesi širinu za mobilne uređaje */
     }
+    /*.slider-item {*/
+    /*    flex: 0 0 100%; */ /* Show 1 item on mobile */
+    /*}*/
 }
 
 .faq-section {
