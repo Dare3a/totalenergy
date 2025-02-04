@@ -5893,7 +5893,3 @@ label {
 .fade {
     transition: opacity .15s linear;
 }
-
-.lista-brendova {
-    list-style: none;
-}
