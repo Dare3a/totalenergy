@@ -5342,9 +5342,6 @@ nav {
     background-color: #60a93c;
 }
 
-.hero-1-section {
-
-}
 
 .widget-title span {
     background: #287db3 none repeat scroll 0 0;
@@ -5404,6 +5401,11 @@ nav {
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.btn-hero a {
+    text-decoration: none;
+    color: white;
 }
 
 /*Card start*/
