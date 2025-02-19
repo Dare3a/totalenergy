@@ -5643,6 +5643,14 @@ nav {
     /*.slider-item {*/
     /*    flex: 0 0 100%; */ /* Show 1 item on mobile */
     /*}*/
+
+    .header-div {
+        /*position: relative;*/
+        background-image: url("../images/a1-selidbe-header_mob.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
 }
 
 .faq-section {
@@ -5927,4 +5935,61 @@ label {
 .btn-red:hover {
     background-color: #e65800 !important;
     color: white !important;
+}
+
+.header-div {
+    /*position: relative;*/
+    background-image: url("../images/a1-selidbe-header.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-pozadina {
+    /*position: absolute;*/
+    /*top: 40%;*/
+    /*transform: translateY(-40%);*/
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    color: white;
+    /*width: 100%;*/
+    /*height: auto;*/
+}
+
+.sidebar-linkovi {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #287db3;
+    border-bottom: 2px solid rgb(192, 192, 192);
+    border-radius: 0.25rem;
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0 5px 5px, rgba(0, 0, 0, 0.22) 0 5px 5px;*/
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #60a93c;
+}
+
+.lista-linkova {
+    padding-left: 20px;
+    list-style: none;
+}
+.lista-linkova .text-link {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.sidebar-linkovi .text-link a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar-linkovi .text-link a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.text-sekcija ul, .text-sekcija ol {
+    padding-left: 20px;
 }
