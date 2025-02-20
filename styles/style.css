@@ -5534,7 +5534,7 @@ nav {
 .oblak:hover {
     color: white;
     padding: 2px 8px;
-    background-color: #287db3;
+    background-color: #4b842e;
     border-radius: 50px;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.50);
     text-decoration: none;
@@ -5994,4 +5994,33 @@ label {
 
 .text-sekcija ul, .text-sekcija ol {
     padding-left: 20px;
+}
+
+.box-price {
+    /*width: fit-content;*/
+    line-height: 1.2em;
+    color: white;
+    background-color: #287db3;
+    /*padding: 0 6px;*/
+    border-radius: 6px;
+}
+
+.box-price a {
+    color: white;
+}
+
+/* Animacija rotacije */
+@keyframes rotateFan {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Primena animacije na SVG ikonicu */
+.fan-icon {
+    display: inline-block;
+    animation: rotateFan 1500ms linear infinite; /* Brzina 1.5s, konstantna, beskonačno */
 }
