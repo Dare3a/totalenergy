@@ -6024,3 +6024,13 @@ label {
     display: inline-block;
     animation: rotateFan 1500ms linear infinite; /* Brzina 1.5s, konstantna, beskonačno */
 }
+
+.text-link {
+    color: #287db3;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    color: #287db3;
+}
