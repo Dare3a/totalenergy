@@ -6036,6 +6036,9 @@ label {
 table, tr, td, th {
     background-color: #287db3 !important;
 }
+ .table-usluga {
+    background-color: #60a93c !important;
+}
 table {
     caption-side: bottom;
     border-collapse: collapse;
@@ -6109,15 +6112,15 @@ tbody, td, th, thead, tr {
 .pre-table a:hover {
     color: #0fa3b2;
 }
-.table-usluge a {
+.table-price a {
     color: white;
 }
 
-.table-usluge a:hover {
+.table-price a:hover {
     color: #0fa3b2;
 }
 
-.table-usluge td {
+.table-price td {
     padding-left: 5px !important;
     padding-right: 5px !important;
 }
