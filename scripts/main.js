@@ -29,6 +29,22 @@ document.addEventListener('click', (event) => {
 });
 //kraj navigacije
 
+//SHARE DUGME
+function sharePage() {
+    if (navigator.share) {
+        navigator.share({
+            title: document.title,
+            url: window.location.href
+        }).then(() => {
+            console.log('Page shared successfully');
+        }).catch((error) => {
+            console.log('Error sharing:', error);
+        });
+    } else {
+        alert('Sharing not supported in this browser.');
+    }
+}
+
 // SCROLL TO TOP
 document.addEventListener("DOMContentLoaded", function (event) {
 
