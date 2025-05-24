@@ -6064,6 +6064,16 @@ label {
     color: #287db3;
 }
 
+.text-link-white {
+    color: white;
+    text-decoration: underline;
+}
+
+.text-link-white:hover {
+    text-decoration: underline;
+    color: white;
+}
+
 table, tr, td, th {
     background-color: #287db3 !important;
 }
